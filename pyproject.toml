@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "AlphaPurify"
+version = "0.1.0"
+authors = [
+  { name="Elias Wu", email="elaiswu71@gamil.com" }
+]
+description = "A powerful quantitative factor cleaning and analysis library"
+long_description = file: "README.md"
+long_description_content_type = "text/markdown"
+requires-python = ">=3.10"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+dependencies = [
+  "pandas",
+  "polars",
+  "duckdb",
+  "plotly",
+  "numpy",
+  "scipy",
+  "pyarrow",
+  "joblib",
+  "scikit-learn",
+  "tqdm",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["alphapurify*"]
+exclude = ["tests*", "docs*"]

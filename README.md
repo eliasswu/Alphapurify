@@ -2,7 +2,7 @@
 
 **AlphaPurify** is a high-performance quantitative factor analysis and purification toolkit designed for institutional-grade research workflows.
 
-It provides a fully modular, vectorized, and multiprocessing-enabled framework for factor cleaning, evaluation, exposure decomposition, and portfolio attribution — built on a modern Polars-based architecture for large-scale cross-sectional datasets.
+It provides a fully modular, vectorized, and multiprocessing-enabled framework for factor cleaning, evaluation, exposure decomposition, and portfolio attribution
 
 ---
 

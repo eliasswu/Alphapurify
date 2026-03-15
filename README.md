@@ -19,7 +19,7 @@
 
 ## Why AlphaPurify?
 
-Compared with traditional factor research tools, AlphaPurify focuses on speed, flexibility, and usability for individual quantitative researchers.
+Compared with traditional factor research tools, **You merely just need a Dataframe**.
 
 **• Optimized for single-machine research**
 

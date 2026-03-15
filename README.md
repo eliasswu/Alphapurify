@@ -19,6 +19,46 @@
 
 ## Why AlphaPurify?
 
+Compared with traditional factor research tools, AlphaPurify focuses on speed, flexibility, and usability for individual quantitative researchers.
+
+**• Optimized for single-machine research**
+
+Many independent researchers work on a single laptop where memory overflow and slow computation are common issues.  
+AlphaPurify is designed with optimized caching, vectorized computation, and multiprocessing wherever possible.
+
+For example, a **15-year daily dataset of the CSI 300 universe** can complete full factor evaluation — including **long-only, long-short, short portfolios and IC analysis** — in **around 30 seconds** on a typical laptop.
+
+---
+
+**• Adaptive to arbitrary bar frequency**
+
+AlphaPurify works with **any bar frequency** (daily, hourly, minute-level, etc.).  
+Return aggregation automatically adapts to the data frequency, while allowing users to explicitly specify the horizon if needed.
+
+The framework is carefully designed to **strictly prevent look-ahead bias**.
+
+---
+
+**• Professional factor preprocessing toolkit**
+
+AlphaPurify provides **40+ built-in preprocessing methods** for factor research, including common operations such as:
+
+- winsorization  
+- standardization  
+- normalization  
+- outlier treatment  
+- transformation utilities  
+
+This allows researchers to rapidly experiment with different factor cleaning pipelines.
+
+---
+
+**• Lightweight high-performance data backend**
+
+AlphaPurify integrates a fast **Parquet + DuckDB** data layer for factor storage and aggregation.
+
+This avoids the need for configuring complex database systems while still providing **high-performance querying and fast factor construction workflows**.
+
 ---
 
 ##  Quick Start

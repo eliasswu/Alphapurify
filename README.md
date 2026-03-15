@@ -29,9 +29,16 @@ pip install alphapurify
 
 ---
 
-## Factor Performance
+## Exemples of Outputs
 
-![IC](assets/newplot.png)
+![IC](assets/newplot.png1)
+![IC](assets/newplot.png2)
+![IC](assets/newplot.png3)
+![IC](assets/newplot.png4)
+![IC](assets/newplot.png5)
+
+
+
 
 ---
 

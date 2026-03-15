@@ -2,12 +2,17 @@
 
 **AlphaPurify** Python library for financial data aggregation, factor construction, IC testing, factor return attribution, full-pipeline backtesting, and large-scale experimentation to help quants rapidly validate ideas.
 
+
 ### AlphaPurify is comprised of 4 main modules:
 
 1.  **`alphapurify.FactorAnalyzer`** — for IC testing and quantile portfolio analysis to evaluate factor predictive ability.
 2.  **`alphapurify.AlphaPurifier`** — for factor preprocessing and method discovery, including cleaning, transformation, and factor inspection utilities.
 3.  **`alphapurify.Database`** — for reading, writing, and aggregating financial and factor datasets.
 4.  **`alphapurify.Exposures`** — for factor correlation analysis and factor-based return attribution.
+
+## Factor Performance
+
+![IC](assets/newplot.png)
 
 ## Installation
 

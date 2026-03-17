@@ -142,7 +142,7 @@ Ex.plot_correlations()
 ## P.S.
 More detailed documentation and examples will be released soon.
 
-Leaving me a feedback after you use it please!
+Leave me a feedback after using it please!
 ---
 
 **Elias Wu**

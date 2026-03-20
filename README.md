@@ -6,7 +6,7 @@
 
 # AlphaPurify: Factor research for quants
 
-**AlphaPurify** Python library for financial data aggregation, factor construction, IC testing, factor return attribution, full-pipeline backtesting, and large-scale experimentation to help quants rapidly validate ideas.
+**AlphaPurify** Python library for factor construction, IC testing, factor return attribution, full-pipeline backtesting, and large-scale experimentation to help quants rapidly validate ideas.
 
 ---
 
@@ -43,9 +43,9 @@ Return aggregation automatically adapts to the data frequency, while allowing us
 
 AlphaPurify provides **40+ built-in preprocessing methods** for factor research, including common operations such as:
 
-- winsorization
-- neutralization
-- standardization  
+- winsorize
+- neutralize
+- standardize
  
 
 This allows researchers to rapidly experiment with different factor cleaning pipelines.

@@ -41,7 +41,7 @@ It natively supports long, short, and long-short rebalancing backtests and deliv
 
 ``AlphaPurify`` is different from libraries like ``QuantStats`` and ``Pyfolio``, which primarily focus on analyzing return curves and portfolio performance. Compared to tools like ``Qlib`` and ``Backtrader``, ``AlphaPurify`` directly provides a lightweight, fast factor-driven rebalancing backtesting framework — eliminating the need for users to build custom pipelines or infrastructure in these libraries.
 
-In short, ``AlphaPurify`` provide quants with a whole factor testing pipeline and beautiful interactive reports.
+In short, ``AlphaPurify`` provide quants with a whole factor testing pipeline and beautiful interactive reports to rapidly validate ideas.
 
 ---
 

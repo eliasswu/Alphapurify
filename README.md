@@ -6,7 +6,7 @@
 
 # AlphaPurify: Factor research for quants
 
-**AlphaPurify** Python library for factor construction, preprocessing, backtesting, and factor return attribution to help quants rapidly validate ideas.
+**AlphaPurify** Python library for factor construction, preprocessing, backtesting, and factor return attributions to help quants rapidly validate ideas.
 
 ---
 
@@ -71,7 +71,7 @@ pip install alphapurify
 
 ---
 
-### 3.Creating backtesting report
+### 3.Creating backtesting reports
 ```bash
 from alphapurify import AlphaPurifier, FactorAnalyzer, Pure_Exposures
 

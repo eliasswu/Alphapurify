@@ -124,10 +124,8 @@ Ex.plot_correlations()
 
 ---
 
+### ⭐ If you find it useful, star & share to help more quants!
 
-More detailed documentation and examples will be released soon.
-
-Leave me a feedback after using it please!
 ---
 
 **Elias Wu**

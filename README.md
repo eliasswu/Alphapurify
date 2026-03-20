@@ -23,6 +23,25 @@
 
 ---
 
+## AlphaPurify vs Other Quant Libraries
+
+| Feature / Library | AlphaPurify | Qlib | Backtrader | Alphalens | QuantStats | Pyfolio |
+|:------------------|:------------|:--------|:------------|:------------|:-------------|:-------------|
+| Core Focus | End-to-end factor research | AI + research platform | Strategy backtesting engine | Factor evaluation (IC) | Performance reporting | Performance analysis |
+| One-DataFrame Workflow | ✅ Yes (core design) | ❌ No | ❌ No | ⚠️ Partial | ❌ No | ❌ No |
+| Factor Preprocessing (40+) | ✅ Built-in | ⚠️ Limited | ❌ No | ❌ No | ❌ No | ❌ No |
+| IC + Quantile Analysis | ✅ Native | ✅ Yes | ❌ No | ✅ Core feature | ❌ No | ❌ No |
+| Long / Short Portfolio Backtest | ✅ Built-in | ✅ Yes | ✅ Yes | ❌ No | ❌ No | ❌ No |
+| Factor Return Attribution | ✅ Native | ⚠️ Indirect | ❌ No | ❌ No | ❌ No | ❌ No |
+| Multi-Frequency Support | ✅ Any (min → daily) | ⚠️ Mostly daily | ✅ Yes | ⚠️ Mostly daily | ❌ No | ❌ No |
+| Single-Machine Optimization | ✅ Strong | ❌ Heavy infra | ⚠️ Medium | ✅ Light | ✅ Light | ⚠️ Medium |
+| Ease of Use | ⭐⭐⭐⭐⭐ | ⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ |
+| Setup Complexity | ⭐ Very Low | 🔴 High | 🟡 Medium | 🟢 Low | 🟢 Low | 🟡 Medium |
+| Data Backend | ✅ Parquet + DuckDB | ⚠️ Custom infra | ❌ None | ❌ None | ❌ None | ❌ None |
+| Best For | 🚀 Rapid factor validation | Research platform teams | Strategy simulation | Factor research | Reporting | Portfolio analysis |
+
+---
+
 ##  Quick Start
 
 ### 1.Install with pip

@@ -124,7 +124,7 @@ Ex.plot_correlations()
 
 ---
 
-### ⭐ If you find it useful, star & share to help more quants!
+### If you like AlphaPurify, please star & fork this project to support the development!
 
 ---
 

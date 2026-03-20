@@ -6,7 +6,7 @@
 
 # AlphaPurify: Factor research for quants
 
-**AlphaPurify** Python library for factor construction, IC testing, factor return attribution, full-pipeline backtesting, and large-scale experimentation to help quants rapidly validate ideas.
+**AlphaPurify** Python library for factor construction, preprocessing, backtesting, and factor return attribution to help quants rapidly validate ideas.
 
 ---
 
@@ -20,41 +20,6 @@
 2.  **`alphapurify.AlphaPurifier`** — for factor preprocessing, including 40+ Winsorization, Neutralization, and Standardization methods.
 3.  **`alphapurify.Database`** — for reading, writing, and aggregating financial and factor datasets.
 4.  **`alphapurify.Exposures`** — for factor correlation analysis and factor-based return attribution.
-
----
-
-## Why AlphaPurify?
-
-Compared with traditional factor research tools, **You merely just need a Dataframe**.
-
-**• Optimized for single-machine research**
- 
-AlphaPurify is designed with optimized caching, vectorized computation, and multiprocessing wherever possible.
-
-For example, a **15-year daily dataset of the CSI 300 universe** can complete full factor evaluation — including **long-only, long-short, short portfolios and IC analysis** — in **around 30 seconds** on a typical laptop.
-
-
-**• Adaptive to arbitrary bar frequency**
-
-AlphaPurify works with **any bar frequency** (daily, hourly, minute-level, etc.).  
-Return aggregation automatically adapts to the data frequency, while allowing users to explicitly specify the horizon if needed.
-
-**• Professional factor preprocessing toolkit**
-
-AlphaPurify provides **40+ built-in preprocessing methods** for factor research, including common operations such as:
-
-- winsorize
-- neutralize
-- standardize
- 
-
-This allows researchers to rapidly experiment with different factor cleaning pipelines.
-
-**• Lightweight high-performance data backend**
-
-AlphaPurify integrates a fast **Parquet + DuckDB** data layer for factor storage and aggregation.
-
-This avoids the need for configuring complex database systems while still providing **high-performance querying and fast factor construction workflows**.
 
 ---
 
@@ -132,6 +97,41 @@ Ex.plot_correlations()
 ![IC2](assets/newplot3.png)
 ![IC2](assets/newplot4.png)
 ![IC2](assets/newplot5.png)
+
+---
+
+## Why AlphaPurify?
+
+Compared with traditional factor research tools, **You merely just need a Dataframe**.
+
+**• Optimized for single-machine research**
+ 
+AlphaPurify is designed with optimized caching, vectorized computation, and multiprocessing wherever possible.
+
+For example, a **15-year daily dataset of the CSI 300 universe** can complete full factor evaluation — including **long-only, long-short, short portfolios and IC analysis** — in **around 30 seconds** on a typical laptop.
+
+
+**• Adaptive to arbitrary bar frequency**
+
+AlphaPurify works with **any bar frequency** (daily, hourly, minute-level, etc.).  
+Return aggregation automatically adapts to the data frequency, while allowing users to explicitly specify the horizon if needed.
+
+**• Professional factor preprocessing toolkit**
+
+AlphaPurify provides **40+ built-in preprocessing methods** for factor research, including common operations such as:
+
+- winsorize
+- neutralize
+- standardize
+ 
+
+This allows researchers to rapidly experiment with different factor cleaning pipelines.
+
+**• Lightweight high-performance data backend**
+
+AlphaPurify integrates a fast **Parquet + DuckDB** data layer for factor storage and aggregation.
+
+This avoids the need for configuring complex database systems while still providing **high-performance querying and fast factor construction workflows**.
 
 ---
 

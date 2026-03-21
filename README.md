@@ -1,3 +1,4 @@
+![IC](assets/logo.jpg)
 [![Python version](https://img.shields.io/badge/python-3.10+-blue.svg?style=flat)](https://pypi.python.org/pypi/alphapurify)
 [![PyPi version](https://img.shields.io/pypi/v/alphapurify.svg?maxAge=60)](https://pypi.python.org/pypi/alphapurify)
 [![PyPi status](https://img.shields.io/pypi/status/alphapurify.svg?maxAge=60)](https://pypi.python.org/pypi/alphapurify)
@@ -7,10 +8,6 @@
 # AlphaPurify: Factor research for quants
 
 **AlphaPurify** Python library for factor construction, preprocessing, backtesting, and factor return attributions to help quants rapidly validate ideas.
-
----
-
-![IC](assets/logo.jpg)
 
 ---
 

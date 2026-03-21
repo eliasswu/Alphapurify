@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/pypi/l/alphapurify)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-linux%20%7C%20windows%20%7C%20macos-lightgrey)](https://pypi.org/project/alphapurify/#files)
 
-### 中文README: !(README_CN.md)
+中文README: !(README_CN.md)
 # AlphaPurify: Factor research for quants
 
 **AlphaPurify** Python library for factor construction, preprocessing, backtesting, and factor return attributions to help quants rapidly validate ideas.

@@ -14,7 +14,7 @@
 
 ---
 
-### AlphaPurify is comprised of 4 main modules:
+## AlphaPurify is comprised of 4 main modules:
 
 1.  **`alphapurify.FactorAnalyzer`** — for IC testing and quantile portfolio analysis to evaluate factor predictive ability.
 2.  **`alphapurify.AlphaPurifier`** — for factor preprocessing, including 40+ Winsorization, Neutralization, and Standardization methods.

@@ -16,11 +16,11 @@
 
 ## AlphaPurify is comprised of 4 main modules:
 
-  ✅1.**`alphapurify.FactorAnalyzer`** — for IC/ Rank IC testing and quantile portfolio analysis to evaluate factor predictive ability.
+  ✅1.**`alphapurify.FactorAnalyzer`** — for IC/ Rank IC testing and Long/ Short/ Long-Short quantile backtests.
 
-  ✅2.**`alphapurify.AlphaPurifier`** — for factor preprocessing, including 40+ Winsorization, Neutralization, and Standardization methods.
+  ✅2.**`alphapurify.AlphaPurifier`** — for factor preprocessing, including 40+ Winsorization, Neutralization, and Standardization methods (e.g., ridge regression, lasso regression, PCA decomposition, etc.).
 
-  ✅3.**`alphapurify.Database`** — for reading, writing, and aggregating financial and factor datasets.
+  ✅3.**`alphapurify.Database`** — for financial data aggregation, factor construction, and factor storage.
 
   ✅4.  **`alphapurify.Exposures`** — for factor correlation analysis and factor-based return attribution.
 

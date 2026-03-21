@@ -126,7 +126,7 @@ Ex.plot_correlations()
 
 ---
 
-### 如果你喜欢， 请为这个项目star并fork以支持开发！
+### 如果你喜欢**`alphapurify.FactorAnalyzer`**， 请为这个项目star并fork以支持开发！
 
 ---
 

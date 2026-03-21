@@ -16,13 +16,13 @@
 
 ## 4 Main Modules:
 
- ✅1.**`alphapurify.FactorAnalyzer`** — for IC/ Rank IC testing and Long/ Short/ Long-Short quantile backtests.
+ ### 1.**`alphapurify.FactorAnalyzer`** — for IC/ Rank IC testing and Long/ Short/ Long-Short quantile backtests.
 
-  ✅2.**`alphapurify.AlphaPurifier`** — for factor preprocessing, including 40+ Winsorization, Neutralization, and Standardization methods (e.g., ridge regression, lasso regression, PCA decomposition, etc.).
+  2.**`alphapurify.AlphaPurifier`** — for factor preprocessing, including 40+ Winsorization, Neutralization, and Standardization methods (e.g., ridge regression, lasso regression, PCA decomposition, etc.).
 
-  ✅3.**`alphapurify.Database`** — for financial data aggregation, factor construction, and factor storage.
+  3.**`alphapurify.Database`** — for financial data aggregation, factor construction, and factor storage.
 
-  ✅4.  **`alphapurify.Exposures`** — for factor correlation analysis and factor-based return attribution.
+  4.  **`alphapurify.Exposures`** — for factor correlation analysis and factor-based return attribution.
 
 ---
 

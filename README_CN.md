@@ -18,7 +18,7 @@
 </p>
 
 <p align="center">
-  <a href="README.md">English README</a> | <a href="README_CN.md">简中 README</a> |
+  <a href="README.md">English README</a> | <a href="README_CN.md">简体中文 README</a> | <a href="README_CN2.md">繁体中文 README</a>
 </p>
 
 # AlphaPurify：面向量化研究员的因子分析库

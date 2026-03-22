@@ -41,7 +41,7 @@
 
 ## Key Features:
 
-### - Extremely Fast — Processes 4 Millions+ rows (15Years CSI 300) including long/short, long-short, IC backtests and creates 4 interactive reports in under 20 seconds (on a standard i7 CPU).
+### - Extremely Fast — Processes 4 Millions+ rows (15 years CSI 300) including long/short, long-short, IC backtests and creates 4 interactive reports in under 20 seconds (on a standard i7 CPU).
 
 ### - Stable at Scale — Reliably handles tens of millions of rows (minute-level data) with memory-optimized design to prevent overflow.
 

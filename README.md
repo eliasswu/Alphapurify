@@ -39,6 +39,16 @@
 
 ---
 
+## Key Features:
+
+-- Extremely Fast — Processes 4 Millions+ rows (15Years CSI 300) including long/short, long-short, IC backtests and creates 4 interactive reports in under 20 seconds (on a standard i7 CPU).
+
+-- Stable at Scale — Reliably handles tens of millions of rows (minute-level data) with memory-optimized design to prevent overflow.
+
+-- 40+ Preprocessing Methods — Built-in professional factor cleaning tools supporting workflows from ultra high-frequency to low-frequency data.
+
+-- Flexible Horizons — Supports unlimited rebalance periods and IC lookback windows simultaneously for richer multi-dimensional factor analysis.
+
 ## AlphaPurify vs Other Quant Libraries
 
 | Feature / Library | AlphaPurify | Qlib | Backtrader | Alphalens | QuantStats | Pyfolio |

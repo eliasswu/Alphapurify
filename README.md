@@ -18,7 +18,7 @@
 </p>
 
 <p align="center">
-  中文 README：<a href="README_CN.md">README_CN.md</a>
+  <a href="README.md">English README</a> | <a href="README_CN.md">简中 README</a> |
 </p>
 
 # AlphaPurify: Factor research for quants

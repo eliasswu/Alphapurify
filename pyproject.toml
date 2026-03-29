@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=77.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "alphapurify"
+version = "0.1.8"
+description = "High-performance quantitative factor analysis and purification toolkit"
+readme = { file = "README.md", content-type = "text/markdown" }
+requires-python = ">=3.10"
+license = "MIT"
+
+authors = [
+  { name = "Elias Wu", email = "elaiswu71@gmail.com" }
+]
+
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Operating System :: OS Independent"
+]
+
+dependencies = [
+  "pandas",
+  "polars",
+  "duckdb",
+  "plotly",
+  "numpy",
+  "scipy",
+  "pyarrow",
+  "joblib",
+  "scikit-learn",
+  "tqdm"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["alphapurify"]
+exclude = ["tests*", "docs*"]

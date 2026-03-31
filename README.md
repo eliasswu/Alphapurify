@@ -39,6 +39,11 @@
 
 ---
 
+## Pipeline Overview
+### Step-by-step examples: **[Go to Examples](./examples)**
+
+---
+
 ## Key Features:
 
 ### - Extremely Fast — Processes 4 Millions+ rows (15 years CSI 300) including long/short, long-short, IC backtests and creates 4 interactive reports in under 25 seconds (on a standard i7 CPU).

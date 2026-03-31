@@ -40,7 +40,7 @@
 ---
 
 ## Pipeline Overview
-### Step-by-step examples: **[Go to Examples](./examples)**
+### Step-by-step Examples: **[English Examples](./examples)**
 
 ---
 

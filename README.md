@@ -41,7 +41,7 @@
 
 ## Pipeline Overview
 
-### 📦 .Database → 🏗️ Factor Construction → .AlphaPurifier Cleaning → 📊 .FactorAnalyzer Backtest → 🎯 .Exposures → ✅ Confirmation → 🔁 .Database
+### Database → Factor Construction → AlphaPurifier Cleaning → 📊FactorAnalyzer Backtest → 🎯Exposures → Confirmation → 🔁Database
 
 ### Step-by-step Examples: **[English Examples](./examples)**
 

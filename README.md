@@ -44,7 +44,9 @@
 ### ①Database → ②Factor Construction → ③AlphaPurifier Cleaning 
 ### → ④FactorAnalyzer Backtest → ⑤Exposures → ⑥Confirmation → ⑦Database 🔁
 
----
+### P.S. For the entire research pipeline, basically, you only need a single DataFrame!
+
+--- 
 
 ## Full Documents & Examples: **[English Docs](./examples)**
 
@@ -106,7 +108,7 @@ pip install alphapurify
 | 2024-01-01 09:31   | MSFT  | 378.9 | 90122  | -0.12 | -0.04 | 0.19 | 0.96 |
 | 2024-01-01 09:32   | MSFT  | 379.1 | 95433  | -0.08 | -0.03 | 0.20 | 0.97 |
 
-**p.s. Your DataFrame must include a time column, an asset identifier column, a price column, and your factor column to ensure proper usage.**
+**P.S. Your DataFrame must include a time column, an asset identifier column, a price column, and your factor column to ensure proper usage.**
 
 ---
 

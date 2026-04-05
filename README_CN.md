@@ -40,6 +40,12 @@
 ---
 
 ## 完整Pipeline
+
+### ①Database → ②Factor Construction → ③AlphaPurifier Cleaning 
+### → ④FactorAnalyzer Backtest → ⑤Exposures → ⑥Confirmation → ⑦Database 🔁
+
+---
+
 ### 完整文档及示例: **[English docs](./examples)**
 
 ---

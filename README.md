@@ -39,23 +39,9 @@
 
 ---
 
-```markdown
 ## Pipeline Overview
 
-> Iterative Factor Research Pipeline
-
-```mermaid
-flowchart LR
-    A((Database))
-    B((Factor Construction))
-    C((AlphaPurifier))
-    D((Factor Analysis & Backtest))
-    E((Exposure Analysis))
-    F((Signal Confirmation))
-
-    A --> B --> C --> D --> E --> F --> A
-
----
+📦 Database → 🏗️ Factor Construction → 🧹 AlphaPurifier → 📊 FactorAnalyzer Backtest → 🎯 Exposures → ✅ Confirmation → 🔁 Database
 
 ### Step-by-step Examples: **[English Examples](./examples)**
 

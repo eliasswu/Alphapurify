@@ -40,7 +40,7 @@
 ---
 
 ## Pipeline Overview
-![Pipeline](assets/pipeline.png)
+![Pipeline](assets/pipeline.jpg)
 --- 
 
 ### Full Documents & Examples: **[English Docs](./examples)**

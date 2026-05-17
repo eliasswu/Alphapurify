@@ -34,6 +34,9 @@ Vectorized modeled with comprehensive transaction fees, stamp duty and market sl
 
 ### 2. Powerful ``FactorAnalyzer.trace()`` :
 Supports cross-sectional snapshot analysis at any designated time point. You can inspect stock weights, individual asset returns under different positions after backtests, and detailed rebalancing position adjustment records. All results are rendered into high-quality interactive Plotly charts directly for intuitive strategy diagnosis.
+
+---
+
 ![cross-section](assets/newplot9.png)
 
 ---

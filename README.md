@@ -27,10 +27,10 @@
 
 ---
 
-## **What's NEW!** &nbsp;   :sparkling_heart:
+## **What's NEW!** &nbsp;   :sparkling_heart
 
 ### 1. 100% live-market-aligned factor backtesting:
-### Fully modeled with comprehensive transaction fees, stamp duty and market slippage. It perfectly replicates real-world weight drift and periodic rebalancing logic, achieving a 1:1 restoration of actual trading behaviors.
+### Vectorized modeled with comprehensive transaction fees, stamp duty and market slippage. It perfectly replicates real-world weight drift and periodic rebalancing logic, achieving a 1:1 restoration of actual trading behaviors.
 
 ### 2. Powerful ``FactorAnalyzer.trace()`` visualization module:
 ### Supports cross-sectional snapshot analysis at any designated time point. You can inspect stock weights, individual asset returns under different positions after backtests, and detailed rebalancing position adjustment records. All results are rendered into high-quality interactive Plotly charts directly for intuitive strategy diagnosis.

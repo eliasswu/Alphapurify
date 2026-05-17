@@ -27,7 +27,7 @@
 
 ---
 
-## **What's NEW!** &nbsp;   :sparkling_heart
+## **What's NEW!** &nbsp;   :sparkling_heart:
 
 ### 1. 100% live-market-aligned factor backtesting:
 ### Vectorized modeled with comprehensive transaction fees, stamp duty and market slippage. It perfectly replicates real-world weight drift and periodic rebalancing logic, achieving a 1:1 restoration of actual trading behaviors.

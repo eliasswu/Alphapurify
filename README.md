@@ -34,7 +34,7 @@
 
 ### 2. Powerful ``FactorAnalyzer.trace()`` visualization module:
 ### Supports cross-sectional snapshot analysis at any designated time point. You can inspect stock weights, individual asset returns under different positions after backtests, and detailed rebalancing position adjustment records. All results are rendered into high-quality interactive Plotly charts directly for intuitive strategy diagnosis.
-![cross-section](assets/newplot9.jpg)
+![cross-section](assets/newplot9.png)
 
 ---
 
@@ -51,7 +51,7 @@
 ---
 
 ## Pipeline Overview
-![Pipeline](assets/pipeline.png)
+![Pipeline](assets/pipeline.jpg)
 --- 
 
 ### Full Documents & Examples: **[English Docs](./examples)**

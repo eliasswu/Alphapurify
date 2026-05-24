@@ -160,13 +160,14 @@ Ex.plot_correlations()
 ![IC2](assets/newplot4.png)
 
 ---
-## What's NEW!💖 — FactorAnalyzer.trace()
+## What's NEW!💖 — FactorAnalyzer.trace( )
 ### 4.Cross-sectional Snapshot
 
-Empowering you to visually track weight transitions and asset returns at ANY timestamp, for ANY position direction, and within ANY quantile bin!
+### Empowering you to visually track weight transitions and asset returns at ANY timestamp, for ANY position direction, and within ANY quantile bin!
 
 ```bash
 For example, if you want to see the situation of the first bin for quarterly rebalancing of long positions on 2012-10-08
+
 FA.trace("Q",'2012-10-08 00:00:00',position="l",bins=[1])
 ```
 ---

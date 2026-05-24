@@ -162,12 +162,13 @@ Ex.plot_correlations()
 ---
 
 ### 4.FactorAnalyzer.trace — for deep-diving into rebalance execution, weight transitions, and return.💖
-Empowering you to visually track weight transitions and asset returns at ANY timestamp, for ANY position direction, and within ANY quantile bin!
+# Empowering you to visually track weight transitions and asset returns at ANY timestamp, for ANY position direction, and within ANY quantile bin!
 
 ```bash
 FA.trace("Q",'2012-10-08 00:00:00',position="l",bins=[1])
-![cross](assets/newplot7.png)
 ---
+
+![cross](assets/newplot7.png)
 
 ### If you like AlphaPurify, please star & fork this project to support the development!
 

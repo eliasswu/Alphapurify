@@ -51,8 +51,6 @@
 
 ### - Extremely Fast — Processes 4 Millions+ rows (15 years CSI 300) including long/short, long-short, IC backtests and creates 4 interactive reports in under 25 seconds (on a standard i7 CPU).
 
-### - Stable at Scale — Reliably handles tens of millions of rows (minute-level data) with memory-optimized design to prevent overflow.
-
 ### - 40+ Preprocessing Methods — Built-in professional factor cleaning tools supporting workflows from ultra high-frequency to low-frequency data.
 
 ### - 1:1 Production-Grade Backtesting — Fully vectorized modeling of transaction fees, slippage, rebalancing, and dynamic weight drift to ensure reliable and rigorous backtest results.

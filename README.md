@@ -65,7 +65,7 @@
 |:------------------|:------------|:--------|:------------|:------------|:-------------|:-------------|
 | Computation Speed | 🚀 Extremely Fast (Rust vectorized + multiprocessing) | ❌ Slow (heavy infrastructure) | ⚠️ Medium | ✅ Fast | no backtest | no backtest |
 | Factor Preprocessing (40+) | ✅ Built-in | ⚠️ Limited | ❌ No | ❌ No | ❌ No | ❌ No |
-| OOM Protection | 🟢 High (Zero Copy) | ❌ Low (Heavy DataFrame Cache) | 🟢 High | no backtest | no backtest | no backtest |
+| OOM Protection | 🟢 High (Zero Copy) | ❌ Low (Heavy DataFrame Cache) | 🟢 High | 🟢 High | no backtest | no backtest |
 | Cross-sectional Snapshot | ✅ Native | ❌ No | ❌ No | ❌ No | ❌ No | ❌ No |
 | Setup Complexity | 🟢 Low | 🔴 High | 🟡 Medium | 🟢 Low | 🟢 Low | 🟢 Low |
 | IC Analysis | ✅ Native | ✅ Yes | ❌ No | ✅Yes | ❌ No | ❌ No |

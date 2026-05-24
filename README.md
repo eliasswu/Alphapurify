@@ -61,7 +61,6 @@
 ---
 
 ## AlphaPurify vs Other Quant Libraries
-Cross-sectional Snapshot
 | Feature / Library | AlphaPurify | Qlib | Backtrader | Alphalens | QuantStats | Pyfolio |
 |:------------------|:------------|:--------|:------------|:------------|:-------------|:-------------|
 | Computation Speed | 🚀 Extremely Fast (Rust vectorized + multiprocessing) | ❌ Slow (heavy infrastructure) | ⚠️ Medium | ✅ Fast | no backtest | no backtest |

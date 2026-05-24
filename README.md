@@ -109,7 +109,7 @@ pip install alphapurify
 
 ### 3.Creating backtesting reports
 ```bash
-from alphapurify import AlphaPurifier, FactorAnalyzer
+from alphapurify import AlphaPurifier, FactorAnalyzer, PureExposures
 
 # preprocess
 df = (

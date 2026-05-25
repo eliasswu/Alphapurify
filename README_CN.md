@@ -166,6 +166,9 @@ FA.trace("Q",'2012-09-28 00:00:00',position="l",bins=[1])
 ```
 
 ---
+
+![cross](assets/newplot7.png)
+
 ### 如果你喜欢``AlphaPurify``， 请为这个项目star并fork以支持开发！
 
 ---

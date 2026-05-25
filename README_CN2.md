@@ -153,6 +153,8 @@ Ex.plot_correlations()
 ## 回測報告示例
 ### 僅限多頭頭寸的回測組合：
 ![IC](assets/newplot2.png)
+### IC 分析:
+![RankIC](assets/newplot6.png)
 ### 因子值和收益率的歸因分析:
 ![IC2](assets/newplot3.png)
 ![IC2](assets/newplot4.png)

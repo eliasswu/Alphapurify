@@ -215,6 +215,216 @@
 #
 # ============================================================
 
+
+==============================================================
+# 4. Cross-sectional Snapshot: Microscopic Alpha Tracer
+# ============================================================
+# This section demonstrates how to use the white-box diagnostic tracer.
+# 
+# ============================================================
+# 4.1 Execute Microscopic Alpha Tracer: Trace ANY dimension!
+# ============================================================
+#
+# # Ensure you have already invoked `FactorAnalyzer.run()` before tracing.
+#
+# trace_df = FactorAnalyzer.trace(
+#      rebalance_period='W',          # Target rebalancing interval (e.g., 5 or 'W', 'M')
+#      date='2012-09-28',             # Target historical trading bar string
+#      bins=[1, 5],                   # Selected quantile bins to visualize. None defaults to ALL bins.
+#      position='l',                  # Directional perspective: 'l' (Long) or 's' (Short)
+#      staticPlot=False,              # True for flattened image, False for interactive Plotly.
+#      return_fig=False,              # True to return (fig, df), False to return df only.
+#      return_full_df=False           # True to bypass time mask and output un-filtered panel data.
+# )
+#
+# ============================================================
+# Parameter Explanation:
+# ============================================================
+#
+# rebalance_period:
+#      The target strategy rebalancing interval. Supports either an integer 
+#      (number of trading bars) or custom calendar codes (e.g., 'W' for Weekly, 'M' for Monthly).
+#
+# date:
+#      The exact chronological execution target bar string. Acts as the central 
+#      node slicing a microscopic micro-panel window ($\pm 1$ Bar) for diagnostic analysis.
+#
+# bins:
+#      List of specific quantile bin coordinates to visualize. 
+#      If None, defaults dynamically to all available quantile blocks sorted in descending order.
+#
+# position:
+#      The directional execution perspective modifier. Defaults to 'l'.
+#      - 'l': Maps long-leg performance tracking vectors (highest quantile groups match positive alpha).
+#      - 's': Maps inverted short-leg metrics (automatically inverts capital allocation weights to `-w`).
+#
+# staticPlot:
+#      Controls rendering interactivity. Defaults to False.
+#      - True: Silences reactive UI JavaScript workers and outputs an immutable flattened vector graphic. 
+#              Crucial for continuous batch reporting scripts or static compliance documentation.
+#      - False: Retains full live Plotly features including interactive vector panning, zooming, and hovering.
+#
+# return_fig:
+#      Controls return container types. Defaults to False.
+#      - True: Returns a compiled `(plotly.graph_objects.Figure, pandas.DataFrame)` tuple for custom layouts.
+#      - False: Passes back only the sliced, cleaned cross-sectional Pandas DataFrame.
+#
+# return_full_df:
+#      Bypass modifier for time masks. Defaults to False.
+#      - False: Automatically filters and slices the data to focus strictly on the target execution window.
+#      - True: Disables the filtration mask, passing back the entire unfiltered panel dataset.
+#
+# ============================================================
+# Output Diagnostics Dashboard & Core Layers:
+# ============================================================
+#
+# Executing this pipeline utilizes Plotly's `make_subplots` engine to vertically stack 
+# high-density diagnostic layers, breaking down the black-box backtest into actionable views:
+#
+# ------------------------------------------------------------
+# Layer 1: Net Returns Sectional Canvas (Panel of Net Returns - Heatmap)
+# ------------------------------------------------------------
+# - Y-axis represents quantile groups (Q1 to Qn); X-axis tracks the chronological sub-window.
+# - Leverages a "RdYlGn" (Red-Yellow-Green) diverging color scale to map cross-sectional net returns.
+# - Each cell embeds explicit high-precision overlays (`texttemplate="%{text:.2%}"`) to pin-point alpha peaks.
+#
+# ------------------------------------------------------------
+# Layer 2: Weight & Return Scatter Cluster (Weights and Returns Scatter)
+# ------------------------------------------------------------
+# - Y-axis represents individual asset forward returns; X-axis captures prior allocated portfolio weights.
+# - Marks precise ticker symbols at cluster centers alongside a $Y=0$ baseline and a median-weight marker.
+# - Empowers researchers to instantly assess if high-weight assets drove performance or triggered drawdowns.
+#
+# ------------------------------------------------------------
+# Layer 3: Gross Return Contribution Breakdown (Contributions of Gross Return Bar)
+# ------------------------------------------------------------
+# - Y-axis logs asset identifiers (Symbols); X-axis computes absolute contribution ($Weight \times Return$).
+# - Automatically sorted in descending order to display alpha drivers on top and laggards at the bottom.
+# - Isolates exactly which specific components inside the quantile group carried the portfolio.
+#
+# ------------------------------------------------------------
+# Layer 4: Portfolio Rebalancing Dumbbell Curves (Weight Changes)
+# ------------------------------------------------------------
+# - Automatically triggered when the sliced cross-section overlaps with strategy rebalance dates.
+# - Y-axis charts assets; X-axis charts the shifting capital weight allocation.
+# - Uses a responsive Dumbbell geometry: Circles represent legacy weights; Diamonds track optimized target targets.
+# - Connector lines visualize individual swap paths, tracking dynamic drift corrections and assets turnover.
+#
+# ============================================================
+
+
+
+# ============================================================
+# 5. Core Engine Execution & Exposed Intermediate Attributes
+# ============================================================
+# This section details the execution engine and the structured datasets 
+# generated after executing FactorAnalyzer.run().
+# ============================================================
+# ------------------------------------------------------------
+# 5.1 Invoking the Backtesting & IC Analysis Pipeline
+# ------------------------------------------------------------
+#
+# # The run() method acts as the master dispatch interface. It utilizes 
+# # an optimized, multi-process parallel architecture backed by PyArrow IPC 
+# # memory mapping and Loky workers to process multiple rebalancing periods 
+# # and horizons simultaneously without shared-memory overhead.
+#
+# FactorAnalyzer.run()
+#
+# ============================================================
+# 5.2 Exposed Micro-Panel Dataframes (For Custom Analysis)
+# ============================================================
+# After execution, the following attributes are bound to your FactorAnalyzer 
+# instance. You can access these anytime to build custom visuals or tables.
+#
+# ------------------------------------------------------------
+#  Performance Summary Sheets (Pandas DataFrames)
+# ------------------------------------------------------------
+#
+# self.ls_stats_panel : pd.DataFrame
+#      Compiled performance summary statistics across all rebalance periods 
+#      for the Long-Short (L-S) strategy portfolio.
+#      Metrics include: Annualized Return, Sharpe Ratio, Sortino Ratio, 
+#      Calmar Ratio, Maximum Drawdown, Win Rate, Profit/Loss ratio, and PnL.
+#
+# self.l_stats_panel : pd.DataFrame
+#      Compiled performance metrics for the Long-only portfolio (Top Quantile), 
+#      processed across all target evaluation intervals.
+#
+# self.s_stats_panel : pd.DataFrame
+#      Compiled performance metrics for the Short-only portfolio (Bottom Quantile), 
+#      accounting for transaction frictions and inverted shorting matrices.
+#
+# self.ic_stats_panel : pd.DataFrame
+#      Predictive factor validity diagnostic matrix tracking IC properties 
+#      across distinct forecast horizons. 
+#      Exposes: Mean IC, IC Standard Deviation, Skewness, Kurtosis, 
+#      t-statistic, p-value, and Information Ratio (IR).
+#
+# ------------------------------------------------------------
+# Structural Time Series & Aggregation Panels
+# ------------------------------------------------------------
+#
+# self.returns_dict : dict[any, pd.DataFrame]
+#      Key: Rebalance Period. Value: Sliced cross-sectional performance panels.
+#      Contains chronological time series for raw, net, and cumulative returns 
+#      across all individual quantiles and the long-short spread.
+#
+# self.ics_dict : dict[any, pd.DataFrame]
+#      Key: Horizon Period. Value: Longitudinal predictive validation matrices.
+#      Stores raw IC series, Rank IC series, rolling means, and cumulative IC series.
+#
+# self.ls_monthly_panel / self.l_monthly_panel / self.s_monthly_panel : pd.DataFrame
+#      Aggregated return performance records truncated and calculated at the configured 
+#      aggregation frequency (e.g., calendar month-end matrices).
+#
+# self.ic_monthly_panel : pd.DataFrame
+#      Aggregated historical factor information storage tracking cumulative 
+#      predictive alpha persistence across calendar sub-periods.
+#
+# ------------------------------------------------------------
+# Friction, Risk Attribution, & Heatmap Matrices
+# ------------------------------------------------------------
+#
+# self.ls_turnovers_dict : dict[any, float]
+#      Maps rebalancing windows to their average aggregate portfolio turnover rate. 
+#      Crucial for identifying factor capacity constraints and decay speeds.
+#
+# self.agg_dfs_dict : dict[any, pd.DataFrame]
+#      Underlying raw trading turnover panels storing granular buy/sell dollar 
+#      volumes and multi-tier slippage/tax cost realizations per period.
+#
+# self.indus_returns_dict : dict[any, pd.DataFrame]
+#      Cross-sectional portfolio industry performance tracking maps. Breaks down 
+#      the active return contributions across discrete risk-group classifications.
+#
+# self.ic_indus_contribs_dict : dict[any, pd.DataFrame]
+#      Factor information-coefficient decay panels isolated by sector/industry, 
+#      allowing researchers to inspect if factor alpha is driven by pure stock 
+#      selection or industry bets.
+#
+# self.heatmap_calendar_dfs_dict / self.heatmap_calendar_s_dfs_dict : dict[any, pd.DataFrame]
+#      Pre-formatted pivot tables matching the Year $\times$ Month grid. Stores 
+#      the active compound excess returns for long-only and short-only panels.
+#
+# ============================================================
+# 5.3 Quick Code Example: Querying Intermediate Properties
+# ============================================================
+#
+# # Example 1: View the Sharpe and Drawdown summary for Long-Short portfolios
+# print(analyzer.ls_stats_panel[["period", "Ann. Sharpe", "Max Drawdown"]])
+#
+# # Example 2: Pull the raw day-to-day returns panel for a 5-day rebalance interval
+# df_5d = analyzer.returns_dict[5]
+# print(df_5d[["cum_ret_net_ls", "ret_net_ls"]].tail())
+#
+# # Example 3: Pull the calendar month excess return grid for the top quantile
+# monthly_grid_q5 = analyzer.heatmap_calendar_dfs_dict[5]
+# print(monthly_grid_q5.head())
+#
+# ============================================================
+
+
 import pandas as pd
 import numpy as np
 from alphapurify import FactorAnalyzer

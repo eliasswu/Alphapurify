@@ -172,6 +172,11 @@ FA.trace("Q",'2012-09-28 00:00:00',position="l",bins=[1])
 
 ![cross](assets/newplot7.png)
 
+### Questions or Feedback?
+If you have any questions, run into bugs, or want to suggest new features, feel free to open an issue or start a discussion. I'd love to hear from you!
+
+---
+
 ### If you like AlphaPurify, please star & fork this project to support the development!
 
 ---

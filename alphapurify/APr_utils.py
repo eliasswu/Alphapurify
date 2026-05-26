@@ -1,4 +1,4 @@
-#Copyright 2025 @Elias Wu
+#Copyright Elias Wu
 import scipy.stats as stats
 import polars as pl
 import pandas as pd

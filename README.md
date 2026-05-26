@@ -172,7 +172,7 @@ FA.trace("Q",'2012-09-28 00:00:00',position="l",bins=[1])
 
 ![cross](assets/newplot7.png)
 
-### Questions or Feedback?
+## Questions or Feedback?
 If you have any questions, run into bugs, or want to suggest new features, feel free to open an issue or start a discussion. I'd love to hear from you!
 
 ---
